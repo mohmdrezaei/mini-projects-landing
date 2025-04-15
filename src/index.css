@@ -9,13 +9,11 @@ body {
   margin: auto;
   max-width: 1440px;
   min-height: 100vh;
-  padding: 10px;
+  
   background-color: #f9fafb;
 }
 
 * {
-  
-  margin: 0;
   box-sizing: border-box;
 }
 

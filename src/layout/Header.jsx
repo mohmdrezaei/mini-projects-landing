@@ -1,8 +1,8 @@
 
 function Header() {
   return (
-    <header className="fixed top-2 z-30 w-full md:top-6">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+    <header className="fixed top-2 z-30 m-auto w-[1200px] md:top-6">
+      <div className="">
         <div className="relative flex h-14 items-center justify-between gap-3 rounded-2xl bg-white/90 px-3 shadow-lg shadow-black/[0.03] backdrop-blur-xs before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(var(--color-gray-100),var(--color-gray-200))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)]">
           <div className="flex flex-1 items-center">
            <h1 className="font-[600] text-xl">Logo</h1>
@@ -20,7 +20,7 @@ function Header() {
             <li>
               <button
                 href="/signup"
-                className="px-5 py-1 rounded-lg shadow-sm bg-gray-700 text-white cursor-pointer font-[500]"
+                className="px-5 py-1 rounded-lg shadow-sm bg-[#263238] text-white cursor-pointer font-[500]"
               >
                 Register
               </button>
