@@ -26,12 +26,12 @@ const TodoApp = () => {
         type="text"
         value={input}
         onChange={(e) => setInput(e.target.value)}
-        className='border font-[400] border-gray-400 rounded-lg w-[300px] mx-3 mt-7 px-3 py-2'
+        className='border font-[400] border-gray-400 rounded-lg w-full md:w-[300px]  mt-7 px-3 py-2'
       />
       <button className='px-10 py-2 rounded-lg shadow-sm bg-[#475962] text-white 
-      cursor-pointer font-[500]' type='submit'>Add Todo</button>
+      cursor-pointer font-[500] mt-5 md:mt-0 md:mx-3' type='submit'>Add Todo</button>
      </form>
-      <ul className='mt-5 text-left w-[430px] m-auto'>
+      <ul className='mt-5 text-left md:w-[430px] m-auto'>
         {todos.map((todo, index) => (
           <li className='font-[500] mb-3 leading-5 ' key={index}>{index+1}. {todo}</li>
         ))}

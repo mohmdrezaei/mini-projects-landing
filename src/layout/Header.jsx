@@ -1,3 +1,4 @@
+import profile from "/images/profile2.png"
 function Header() {
   return (
     <header className="sticky top-2 z-30 m-auto lg:w-[1200px] md:top-6 w-auto">
@@ -6,8 +7,10 @@ function Header() {
           <div className="flex flex-1 items-center">
             <h1 className="font-[600] text-xl">Logo</h1>
           </div>
-
-          <ul className="flex flex-1 items-center justify-end gap-3">
+          <div>
+       <img className="md:hidden" width="40" src={profile} alt="profile" />
+          </div>
+          <ul className="md:flex flex-1 items-center justify-end gap-3 hidden">
             <li>
               <button className="px-5 py-1 rounded-lg shadow-sm cursor-pointer font-[500]">
                 Login
