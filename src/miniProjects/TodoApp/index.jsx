@@ -1,8 +1,16 @@
-import  { useState } from 'react';
+import  { useEffect, useState } from 'react';
 
 const TodoApp = () => {
-  const [todos, setTodos] = useState([]);
-  const [input, setInput] = useState('');
+    const [input, setInput] = useState('');
+    const [todos, setTodos] = useState(() => {
+        const savedTodos = localStorage.getItem('todos');
+        return savedTodos ? JSON.parse(savedTodos) : [];
+      });
+    
+      useEffect(() => {
+        localStorage.setItem('todos', JSON.stringify(todos));
+      }, [todos]);
+    
 
   const addTodo = (e) => {
     e.preventDefault()
