@@ -1,15 +1,12 @@
-import Header from "./Header"
+import Header from "./Header";
 
-function Layout({children}) {
+function Layout({ children }) {
   return (
     <>
-    <Header/>
-    <div >
-        {children}
-    </div>
-    
+      <Header />
+      <div>{children}</div>
     </>
-  )
+  );
 }
 
-export default Layout
+export default Layout;
