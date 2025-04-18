@@ -47,6 +47,7 @@ const TodoApp = () => {
           value={input}
           onChange={(e) => setInput(e.target.value)}
           className="border font-[400] border-gray-400 rounded-lg w-full md:w-[300px] mt-7 px-3 py-2"
+          required
         />
         <button
           className="px-10 py-2 rounded-lg shadow-sm bg-[#475962] text-white cursor-pointer font-[500] mt-5 md:mt-0 md:mx-3"
